@@ -1,4 +1,5 @@
 🎯 Purpose of Section‑09
+
 This section teaches how to monitor, detect, and respond to identity‑centric threats using:
 
 Windows Event Logging
