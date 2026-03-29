@@ -1,14 +1,14 @@
+# 🛡️ Identity Security Masterclass
 
+###
 
-## 🛡️ **Identity Security Masterclass**
-
-#### **A Complete Learning Path from Active Directory to Microsoft Entra ID**
+**A Complete Learning Path from Active Directory to Microsoft Entra ID**
 
 _**Powered by Real‑World Engineering + Mahabharatam Storytelling**_
 
 ***
 
-### 🌄 **Hero Banner Message**
+#### 🌄 **Hero Banner Message**
 
 > **“Master Identity Security with a unique blend of modern cloud engineering and the timeless wisdom of the Mahabharatam.”**
 >
@@ -16,7 +16,7 @@ _**Powered by Real‑World Engineering + Mahabharatam Storytelling**_
 
 ***
 
-## &#x20;🌟 **Why This Masterclass Is Unique**
+### 🌟 **Why This Masterclass Is Unique**
 
 Most technical courses dump information.\
 **This one tells a story.**
@@ -43,47 +43,47 @@ Your audience will **love** reading this.
 
 ***
 
-## 🚀 **What You Will Learn**
+### 🚀 **What You Will Learn**
 
-#### **🔐 Identity Foundations**
+**🔐 Identity Foundations**
 
 IAM Core Concepts, Authentication Models, Authorization, Protocols
 
-#### **🏛 Active Directory Deep Dive**
+**🏛 Active Directory Deep Dive**
 
 Domains, Forests, GPO, Delegation, Kerberos, NTLM, Hardening
 
-#### **⚠️ AD Attacks & Defenses**
+**⚠️ AD Attacks & Defenses**
 
 Kerberoasting, AS‑REP, Golden Ticket, DCSync, RBCD, PtH, PtT
 
-#### **☁️ Microsoft Entra ID**
+**☁️ Microsoft Entra ID**
 
 Cloud identity architecture, OAuth/OIDC/SAML, Conditional Access
 
-#### **🔗 Hybrid Identity**
+**🔗 Hybrid Identity**
 
 Azure AD Connect, PHS/PTA, Federation, Hybrid Join, Cloud Kerberos Trust
 
-#### **🛡 Identity Security Engineering**
+**🛡 Identity Security Engineering**
 
 Identity Protection, PIM, CA Policies, Risk-based access
 
-#### **📊 SOC Operations with Defender XDR + Sentinel**
+**📊 SOC Operations with Defender XDR + Sentinel**
 
 Analytics, hunting, incident correlation, automation (SOAR)
 
-#### **🧪 Hands-On Labs**
+**🧪 Hands-On Labs**
 
 Attack simulation, detection, investigation, and automated response
 
-#### **📘 Enterprise Identity Security Blueprint**
+**📘 Enterprise Identity Security Blueprint**
 
 Full production-ready identity architecture
 
 ***
 
-## 🧭 **Course Structure**
+### 🧭 **Course Structure**
 
 A structured path from fundamentals → cloud → security → SOC → blueprint.
 
@@ -101,7 +101,7 @@ A structured path from fundamentals → cloud → security → SOC → blueprint
 
 ***
 
-## 🌐 **Who This Is For**
+### 🌐 **Who This Is For**
 
 * IAM Engineers
 * Active Directory Administrators
@@ -113,7 +113,7 @@ A structured path from fundamentals → cloud → security → SOC → blueprint
 
 ***
 
-## 🔥 **Why This Documentation Matters**
+### 🔥 **Why This Documentation Matters**
 
 ✔ Uses modern Microsoft cloud identity practices\
 ✔ Built as an enterprise-level reference guide\
@@ -124,7 +124,7 @@ A structured path from fundamentals → cloud → security → SOC → blueprint
 
 ***
 
-## 📘 **Start Your Journey**
+### 📘 **Start Your Journey**
 
 Begin with:
 
@@ -137,5 +137,5 @@ Your journey into mastering identity — from on‑prem to cloud, from authentic
 > **Crafted with engineering precision and narrated with epic storytelling.**
 >
 > _“May your knowledge be sharp as Arjuna’s arrows,_\
-> &#xNAN;_&#x79;our strategy wise as Krishna,_\
-> &#xNAN;_&#x61;nd your identity defenses impenetrable as the Pandava army.”_
+> \&#xNAN;_your strategy wise as Krishna,_\
+> \&#xNAN;_and your identity defenses impenetrable as the Pandava army.”_
