@@ -1,4 +1,5 @@
 📘 06.01 — What is Entra ID?
+
 A simple, deep, Mahabharata‑inspired introduction to Microsoft’s Cloud Identity Platform.
 
 🏹 **Mahabharata Analogy —
