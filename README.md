@@ -1,8 +1,4 @@
----
-description: Welcome to your team’s developer platform
----
 
-# Developer Platform
 
 ## 🛡️ **Identity Security Masterclass**
 
