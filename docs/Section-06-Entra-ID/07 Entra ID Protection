@@ -1,0 +1,291 @@
+📘 06.07 — Entra ID Protection (Identity Protection & Risk-Based Security)
+A simple → deep Mahabharata‑aligned guide to Microsoft Entra ID Identity Protection and risk-based access.
+
+🏹 **Mahabharata Analogy —
+“Foreseeing danger before arrows are fired.”**
+In the Mahabharata:
+
+Krishna often warned the Pandavas before danger arrived:
+
+predicting Shakuni’s deceit,
+reading subtle strategic signs,
+identifying hidden assassins,
+understanding intentions before any attack happened.
+
+
+
+This ability to detect threats BEFORE they strike often changed the course of battle.
+Microsoft Entra ID Protection plays the same role:
+
+It detects risky identities and risky sign‑ins using real-time intelligence and protects your tenant before attackers strike.
+Entra ID Protection uses machine learning, global threat signals, and adaptive risk detection to identify compromised accounts and block high‑risk authentication.
+ [community....eworks.com]
+
+
+🔐 1. What Is Entra ID Protection? (Simple Definition)
+Microsoft Entra ID Protection is a cloud-native identity threat detection system that analyzes:
+
+Users
+Sign-ins
+Sessions
+Credentials
+Behavior
+Threat intelligence
+
+And assigns risk levels to them.
+According to Microsoft Learn:
+
+Entra ID Identity Protection uses machine learning and threat intelligence to detect risky users, risky sign-ins, and compromised credentials, and allows automated remediation using risk-based policies.
+ [community....eworks.com]
+
+Identity Protection is the core security brain of Entra ID.
+
+🧭 2. Why Identity Protection Exists (Hastinapura Logic)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ancient Warfare ChallengeEntra ID SolutionSpies disguised as warriorsDetect anomalous sign-insAssassins attacking at nightDetect impossible travelStolen weapons misusedDetect unfamiliar sign-insPoisoned food/treacheryDetect malware-linked IP addressesFalse messengersDetect leaked credentials
+Identity Protection = Krishna’s intelligence network for modern identity.
+
+🧠 3. The Three Pillars of Identity Protection (Microsoft Learn)
+Microsoft documents three core risk areas Identity Protection detects:
+✔ 1. User Risk
+Suspicious activity indicating the user account is compromised.
+ [community....eworks.com]
+✔ 2. Sign-in Risk
+Suspicious patterns during sign-in (impossible travel, TOR, malware).
+ [community....eworks.com]
+✔ 3. Risky Users / Risky Credentials
+Accounts that Microsoft believes attackers have control over.
+ [community....eworks.com]
+These risks feed directly into Conditional Access → allowing automated blocking & remediation.
+
+🔥 4. Risk Detections (Microsoft’s Actual Signals)
+Microsoft Learn lists the following identity risk signals:
+ [community....eworks.com]
+User Risk Detections
+
+Leaked credentials
+Suspicious inbox rules
+Password spray detected
+Malware linked to user
+Unfamiliar user activity
+
+Sign-in Risk Detections
+
+Anonymous IP address
+Impossible travel
+Sign-in from infected device
+Unfamiliar sign-in properties
+Atypical travel
+TOR browser activity
+Token replay
+
+Session Risk
+
+Token theft
+Token anomalies detected
+
+Identity Protection continuously evaluates these signals using real-time intelligence from the Microsoft ecosystem.
+
+🛡 5. Risk-Based Conditional Access Policies
+Identity Protection integrates directly with Conditional Access.
+Microsoft Learn confirms:
+
+Risk-based Conditional Access can automatically block high-risk users or require secure authentication based on risk levels.
+ [community....eworks.com]
+
+Key Risk Policies:
+✔ User Risk Policy
+If Microsoft believes the account is compromised →
+→ Block access OR require password reset.
+✔ Sign-in Risk Policy
+If a suspicious sign-in is detected →
+→ Require MFA OR block login.
+✔ MFA Registration Policy
+Force users to register MFA during high-risk scenarios.
+These policies are adaptive and continuously updated.
+
+🕸 6. Identity Protection Architecture (Mermaid Diagram)
+flowchart TD    Threats[Global Threat Intelligence<br/>ML + Signals] --> Risks[Risk Detection Engine]    Risks --> UserRisk[User Risk Level]    Risks --> SignInRisk[Sign-In Risk Level]    Risks --> RiskyUsers[Risky Users]    UserRisk --> CA[Risk-Based Conditional Access]    SignInRisk --> CA    RiskyUsers --> CA    CA --> Actions[Enforce Actions<br/>MFA / Block / Reset Password]Show more lines#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b {font-family:"trebuchet ms", verdana, arial, sans-seriffont-size:16px;fill:rgb(51, 51, 51);}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-animation-slow {stroke-dashoffset:900animation-duration:50s;animation-timing-function:linear;animation-delay:0s;animation-iteration-count:infinite;animation-direction:normal;animation-fill-mode:none;animation-play-state:running;animation-name:dash;animation-timeline:auto;animation-range-start:normal;animation-range-end:normal;stroke-linecap:round;stroke-dasharray:9, 5;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-animation-fast {stroke-dashoffset:900animation-duration:20s;animation-timing-function:linear;animation-delay:0s;animation-iteration-count:infinite;animation-direction:normal;animation-fill-mode:none;animation-play-state:running;animation-name:dash;animation-timeline:auto;animation-range-start:normal;animation-range-end:normal;stroke-linecap:round;stroke-dasharray:9, 5;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .error-icon {fill:rgb(85, 34, 34)}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .error-text {fill:rgb(85, 34, 34)stroke:rgb(85, 34, 34);}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-thickness-normal {stroke-width:1px}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-thickness-thick {stroke-width:3.5px}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-pattern-solid {stroke-dasharray:0}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-thickness-invisible {stroke-width:0fill:none;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-pattern-dashed {stroke-dasharray:3}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-pattern-dotted {stroke-dasharray:2}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .marker {fill:rgb(51, 51, 51)stroke:rgb(51, 51, 51);}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .marker.cross {stroke:rgb(51, 51, 51)}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b svg {font-family:"trebuchet ms", verdana, arial, sans-seriffont-size:16px;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b p {margin-top:0pxmargin-right:0px;margin-bottom:0px;margin-left:0px;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .label {font-family:"trebuchet ms", verdana, arial, sans-serifcolor:rgb(51, 51, 51);}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .cluster-label text {fill:rgb(51, 51, 51)}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .cluster-label span {color:rgb(51, 51, 51)}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .cluster-label span p {background-color:transparent}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .label text, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b span {fill:rgb(51, 51, 51)color:rgb(51, 51, 51);}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node rect, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node circle, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node ellipse, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node polygon, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node path {fill:rgb(236, 236, 255)stroke:rgb(147, 112, 219);stroke-width:1px;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .rough-node .label text, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node .label text, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .image-shape .label, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .icon-shape .label {text-anchor:middle}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node .katex path {fill:rgb(0, 0, 0)stroke:rgb(0, 0, 0);stroke-width:1px;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .rough-node .label, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node .label, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .image-shape .label, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .icon-shape .label {text-align:center}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node.clickable {cursor:pointer}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .root .anchor path {stroke-width:0stroke:rgb(51, 51, 51);fill:rgb(51, 51, 51);}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .arrowheadPath {fill:rgb(51, 51, 51)}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edgePath .path {stroke:rgb(51, 51, 51)stroke-width:2px;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .flowchart-link {stroke:rgb(51, 51, 51)fill:none;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edgeLabel {background-color:rgba(232, 232, 232, 0.8)text-align:center;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edgeLabel p {background-color:rgba(232, 232, 232, 0.8)}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edgeLabel rect {opacity:0.5background-color:rgba(232, 232, 232, 0.8);fill:rgba(232, 232, 232, 0.8);}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .labelBkg {background-color:rgba(232, 232, 232, 0.5)}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .cluster rect {fill:rgb(255, 255, 222)stroke:rgb(170, 170, 51);stroke-width:1px;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .cluster text {fill:rgb(51, 51, 51)}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .cluster span {color:rgb(51, 51, 51)}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b div.mermaidTooltip {position:absolutetext-align:center;max-width:200px;padding-top:2px;padding-right:2px;padding-bottom:2px;padding-left:2px;font-family:"trebuchet ms", verdana, arial, sans-serif;font-size:12px;background-image:initial;background-position-x:initial;background-position-y:initial;background-size:initial;background-repeat:initial;background-attachment:initial;background-origin:initial;background-clip:initial;background-color:rgb(249, 255, 236);border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:rgb(170, 170, 51);border-right-color:rgb(170, 170, 51);border-bottom-color:rgb(170, 170, 51);border-left-color:rgb(170, 170, 51);border-image-source:initial;border-image-slice:initial;border-image-width:initial;border-image-outset:initial;border-image-repeat:initial;border-top-left-radius:2px;border-top-right-radius:2px;border-bottom-right-radius:2px;border-bottom-left-radius:2px;pointer-events:none;z-index:100;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .flowchartTitleText {text-anchor:middlefont-size:18px;fill:rgb(51, 51, 51);}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b rect.text {fill:nonestroke-width:0;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .icon-shape, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .image-shape {background-color:rgba(232, 232, 232, 0.8)text-align:center;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .icon-shape p, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .image-shape p {background-color:rgba(232, 232, 232, 0.8)padding-top:2px;padding-right:2px;padding-bottom:2px;padding-left:2px;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .icon-shape rect, #mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .image-shape rect {opacity:0.5background-color:rgba(232, 232, 232, 0.8);fill:rgba(232, 232, 232, 0.8);}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .label-icon {display:inline-blockheight:1em;overflow-x:visible;overflow-y:visible;vertical-align:-0.125em;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node .label-icon path {fill:currentcolorstroke:revert;stroke-width:revert;}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b :root {--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif}
+#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .error-icon{fill:#552222;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .error-text{fill:#552222;stroke:#552222;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-thickness-normal{stroke-width:1px;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-thickness-thick{stroke-width:3.5px;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-pattern-solid{stroke-dasharray:0;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .marker{fill:#333333;stroke:#333333;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .marker.cross{stroke:#333333;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b p{margin:0;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .cluster-label text{fill:#333;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .cluster-label span{color:#333;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .cluster-label span p{background-color:transparent;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .label text,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b span{fill:#333;color:#333;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node rect,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node circle,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node ellipse,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node polygon,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .rough-node .label text,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node .label text,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .image-shape .label,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .icon-shape .label{text-anchor:middle;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .rough-node .label,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node .label,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .image-shape .label,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .icon-shape .label{text-align:center;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node.clickable{cursor:pointer;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .root .anchor path{fill:#333333!important;stroke-width:0;stroke:#333333;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .arrowheadPath{fill:#333333;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .flowchart-link{stroke:#333333;fill:none;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .cluster text{fill:#333;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .cluster span{color:#333;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b rect.text{fill:none;stroke-width:0;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .icon-shape,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .image-shape{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .icon-shape p,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .image-shape p{background-color:rgba(232,232,232, 0.8);padding:2px;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .icon-shape rect,#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .image-shape rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#mermaid-6c606c6f-8878-44a2-8ca4-8b63bdc9cf3b :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}Global Threat IntelligenceML + SignalsRisk Detection EngineUser Risk LevelSign-In Risk LevelRisky UsersRisk-Based ConditionalAccessEnforce ActionsMFA / Block / ResetPassword
+
+🔐 7. Core Features of Entra ID Protection
+✔ Automated Remediation
+If risky sign-in detected → force MFA.
+If user risk is high → block user.
+✔ Reporting
+Dashboards for:
+
+Risky users
+Risky sign-ins
+Risk detections
+
+✔ Investigation
+Analysts can:
+
+Analyze timelines
+Investigate user actions
+Confirm or dismiss signals
+
+✔ Integration with:
+
+Conditional Access
+Defender for Cloud Apps
+SIEM / Microsoft Sentinel
+Identity Governance
+
+
+🌍 8. Global Threat Intelligence (How Microsoft Detects Risk)
+Microsoft Learn states the identity platform uses:
+
+Machine learning
+Heuristics
+Microsoft threat intelligence
+Insight from billions of daily authentication attempts
+ [community....eworks.com]
+
+This allows detection of attacks such as:
+
+Password spray
+Replay attacks
+Stolen tokens
+Malware-infected sessions
+High-risk IP activity
+
+Identity Protection → continuously improves based on global telemetry.
+
+🔧 9. Best Practices for Entra ID Protection
+✔ Enable ALL Identity Protection policies
+
+User Risk Policy
+Sign-in Risk Policy
+MFA registration policy
+
+✔ Block legacy authentication
+Legacy protocols skip risk evaluation.
+Entra ID supports integration but recommends modern protocols.
+ [github.com]
+✔ Use MFA enforcement + passwordless
+Prevents stolen-password attacks.
+✔ Deploy Conditional Access templates
+Microsoft offers ready-to-use CA templates for MFA, admin protection, and risk policies.
+✔ Monitor dashboards weekly
+Check for:
+
+New risky users
+Unfamiliar sign-ins
+Credential leaks
+Impossible travel patterns
+
+✔ Integrate with Microsoft Sentinel
+Export sign-in and audit logs for threat correlation.
+
+🧵 10. Mind Map
+Entra ID Protection
+ ├─ Risk Detection
+ │   ├─ User Risk
+ │   ├─ Sign-in Risk
+ │   └─ Token/Session Risk
+ ├─ Risk Policies
+ │   ├─ User Risk Policy
+ │   ├─ Sign-in Risk Policy
+ │   └─ MFA Registration Policy
+ ├─ Response Actions
+ │   ├─ MFA Required
+ │   ├─ Block Access
+ │   └─ Reset Password
+ ├─ Signals & Intelligence
+ │   ├─ Impossible Travel
+ │   ├─ Malware-linked IP
+ │   ├─ Token Replay
+ │   ├─ TOR Access
+ └─ Integrations
+     ├─ Conditional Access
+     ├─ Sentinel
+     ├─ Defender for Cloud Apps
+     ├─ Identity Governance
+
+
+🎯 Summary
+Microsoft Entra ID Protection is the identity defense intelligence that:
+
+Detects risky users
+Identifies compromised sign-ins
+Evaluates threat signals
+Uses machine learning
+Automates responses via Conditional Access
+Blocks attackers BEFORE access occurs
+
+It is the Krishna-like predictive shield of Entra ID —
+protecting your identity kingdom from spies, infiltrators, and credential attacks.
