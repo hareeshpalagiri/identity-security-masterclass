@@ -2,9 +2,6 @@
 
 # 📘 **01 — Introduction to Identity & Access Management (IAM)**
 
-*A simple, deep, story‑based explanation using strategic Mahabharata analogies — GitBook Ready*
-
-***
 
 # 🏹 **Mahabharata Story Analogy (Strategic Only)**
 
@@ -81,7 +78,7 @@ IAM = **Order over chaos**.
 ### **Identity**
 
 A digital representation of a person, system, or service.\
-Example: <hareesh@corp.com> or CORP\Server01$.
+Example: <hareesh@corp.com> , <gp@corp.com> or CORP\Server01$.
 
 ### **Authentication**
 
