@@ -137,5 +137,5 @@ Your journey into mastering identity — from on‑prem to cloud, from authentic
 > **Crafted with engineering precision and narrated with epic storytelling.**
 >
 > _“May your knowledge be sharp as Arjuna’s arrows,_\
-> \&#xNAN;_your strategy wise as Krishna,_\
-> \&#xNAN;_and your identity defenses impenetrable as the Pandava army.”_
+>  _"your strategy wise as Krishna,_\
+> _"and your identity defenses impenetrable as the Pandava army.”_
